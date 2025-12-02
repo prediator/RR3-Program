@@ -1,0 +1,44 @@
+# Exclude build artifacts
+target/
+node_modules/
+
+# Exclude all keypairs and private keys
+**/*keypair.json
+**/*-keypair.json
+**/id.json
+**/*.key
+**/*.pem
+
+# Exclude deployment info
+**/deployment-info.json
+**/*-deployment*.json
+**/devnet-status.json
+
+# Exclude test scripts (keep only official tests)
+check-*.js
+test-*.js
+debug-*.js
+initialize-*.js
+send-*.js
+create-*.js
+fund-*.js
+claim-*.js
+
+# Exclude documentation files (except README)
+*.md
+!README.md
+!SECURITY.md
+
+# Exclude IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Exclude OS files
+.DS_Store
+Thumbs.db
+
+# Keep wallet addresses public but not private keys
+!.github/
