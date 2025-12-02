@@ -68,11 +68,11 @@ else
     echo ""
     
     solana-verify verify-from-repo \
+      "$REPO_URL" \
       --program-id "$PROGRAM_ID" \
-      --repo "$REPO_URL" \
       --commit-hash "$COMMIT_HASH" \
       --library-name "$LIBRARY_NAME" \
-      --cluster "$NETWORK"
+      --mount-path "."
     
     if [ $? -eq 0 ]; then
         echo ""
