@@ -86,7 +86,7 @@ This program can be verified using `solana-verify`:
 ```bash
 solana-verify verify-from-repo \
   --program-id 8HVDihB8NrYpqzRNrFuiSPUC7B4rRqa8HFRJNWoxH4JK \
-  --repo https://github.com/prediator/RR3-Staking \
+  --repo https://github.com/prediator/RR3-Program \
   --commit-hash <COMMIT_HASH> \
   --library-name staker
 ```
